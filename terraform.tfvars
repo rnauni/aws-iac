@@ -1,6 +1,7 @@
 # General settings
-region       = "us-east-1" # Specify the AWS region where resources will be created
-project_name = "aws-iac"   # Name to tag AWS resources for easy identification
+region       = "us-east-1"  # Specify the AWS region where resources will be created
+profile      = "cloud_user" # Specify name of AWS profile to use
+project_name = "aws-iac"    # Name to tag AWS resources for easy identification
 
 # VPC module settings
 vpc_cidr            = "10.0.0.0/16"                  # CIDR block for the VPC

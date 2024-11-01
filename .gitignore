@@ -1,0 +1,20 @@
+# Terraform plugin cache
+.terraform
+
+# Tfplan files
+*tfplan
+
+# Terraform lock file
+.terraform.lock.hcl
+.terraform.lock.info.backup
+
+# Terraform state files, backups and locks
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# AWS SSH key-pair directory
+.ssh
+
+# AWS Credentials directory
+.aws

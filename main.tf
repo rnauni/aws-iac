@@ -1,10 +1,5 @@
-provider "aws" {
-  region = var.region
-}
-
 module "vpc" {
   source              = "./modules/vpc"
-  region              = var.region
   name_tag            = var.project_name
   vpc_cidr            = var.vpc_cidr
   public_subnet_count = var.public_subnet_count
@@ -13,7 +8,6 @@ module "vpc" {
 
 module "ec2" {
   source        = "./modules/ec2"
-  region        = var.region
   name_tag      = var.project_name
   ami           = var.ami
   instance_type = var.instance_type
